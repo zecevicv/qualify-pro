@@ -53,3 +53,20 @@ if (document.querySelector('.post-slider')) {
     },
   });
 }
+
+/* #CS Navigation
+  ======================================================= */
+
+// Slider
+if (document.querySelector('.cs-navigation .swiper')) {
+  new Swiper(".cs-navigation .swiper", {
+    breakpoints: {
+      0: {
+        slidesPerView: 2.5,
+      },
+      1024: {
+        slidesPerView: 5,
+      }
+    }
+  });
+}
